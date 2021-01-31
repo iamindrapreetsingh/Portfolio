@@ -1,0 +1,72 @@
+body
+{
+    margin: 0px;
+}
+
+.header
+{
+    background-image: url("background.jpg");
+    height: 350px;
+    width: 100%;  
+    background-size: cover;
+}
+
+#name
+{
+    color: white;
+    border-radius: 3%;
+    font-size: 70px;
+    margin-top: 130px;
+    width: fit-content;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#links
+{    margin-top: -250px;
+    margin-left: 1200px;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: thistle;
+}
+
+#footer
+{   
+    height: 100%;
+    width: 100%; 
+    background-color:rgb(67, 69,68);
+    color: white;
+}
+
+#projects
+{
+    margin-left: 100px;
+}
+
+#project-heading
+{
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.project-name
+{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.project-details
+{
+    font-size: 20px;
+    margin-top: 20px;
+}

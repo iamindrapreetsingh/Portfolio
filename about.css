@@ -1,0 +1,124 @@
+body
+{
+    margin: 0px;
+    background-color: rgb(102, 153, 153);
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+#main
+{
+    margin-left:260px;
+    border-style: solid;
+    border-color: yellowgreen;
+    border-width:20px;
+    height:845px;
+    width:900px;
+    background-color: white;
+    font-size:30px;
+}
+
+#embedded
+{
+    height: 100%;
+    width:300px;    
+    background-color:white;
+    margin-left:600px;
+}
+
+#nested
+{
+    height:45%;
+    width:300px;
+    background-color:black;
+}
+
+.designation
+{
+    font-size: 28px;
+    margin-left: 40px;
+    font-weight: bold;
+    display:block;
+}
+
+.college
+{
+    font-size: 28px; 
+    margin-left: 40px; 
+    font-weight: bold;
+}
+
+#down_left
+{
+    height:620px;
+    width:600px;
+    background-color: black;
+    position: absolute;
+    top: 200px;
+
+}
+
+#top_left
+{
+  position:absolute;
+  width:595px;
+  height:500px; 
+  font-weight: bold;
+  border-style:solid;
+  border-color:white;
+}
+
+#skills
+{
+    position: absolute;
+    width:600px;
+    top:373px;
+}
+
+.skills-a
+{
+    background-color: white;
+    border-color:black;
+    border-style: solid; 
+    font-weight: bold; 
+    font-size: 40px;
+    padding: 10px;
+}
+
+.skills-b
+{
+    background-color:grey;
+}
+
+.contact-details
+{
+    font-size: 20px;
+}
+
+#skills-heading
+{
+    background-color:black;
+    padding: 10px;
+    color:white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#links
+{ 
+    margin-left: 1200px;
+    position: absolute;
+    color: white;
+    margin-top: 20px;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: thistle;
+}
