@@ -2,60 +2,56 @@ body
 {
     margin: 0px;
     background-color: rgb(102, 153, 153);
-    background-image: url("background.jpg");
     background-size: cover;
-}
-
-#main
-{
-    margin-left:260px;
     border-style: solid;
     border-color: yellowgreen;
     border-width:20px;
-    height:845px;
-    width:900px;
-    background-color: white;
-    font-size:30px;
+    height: fit-content;
 }
 
-#embedded
+.header
 {
-    height: 100%;
-    width:300px;    
-    background-color:white;
-    margin-left:600px;
+    height: 350px;
+    width: 100%;  
+    background-image: url("background.jpg");
+    background-size: cover;   
 }
 
-#nested
+.name-and-desig
 {
-    height:45%;
-    width:300px;
-    background-color:black;
+    position: relative;
+    color: white;
+    border-radius: 3%;
+    font-size: 70px;
+    top: 140px;
+    width: fit-content;
+    left: 20px;
 }
 
 .designation
 {
-    font-size: 28px;
-    margin-left: 40px;
-    font-weight: bold;
-    display:block;
+    font-size: 50px;
 }
 
-.college
+#about
 {
-    font-size: 28px; 
-    margin-left: 40px; 
-    font-weight: bold;
+    position: relative;
+    background-color: white;
+    font-size:30px;
+    display: flex;
 }
 
-#down_left
+.education-and-empoyment-png
 {
-    height:620px;
-    width:600px;
-    background-color: black;
-    position: absolute;
-    top: 200px;
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+.employment-section
+{
+    margin-top: 50px;
 }
 
 #top_left
@@ -70,9 +66,8 @@ body
 
 #skills
 {
-    position: absolute;
-    width:600px;
-    top:373px;
+    background-color: antiquewhite;
+    flex: 1;
 }
 
 .skills-a
@@ -82,7 +77,6 @@ body
     border-style: solid; 
     font-weight: bold; 
     font-size: 40px;
-    padding: 10px;
 }
 
 .skills-b
@@ -90,26 +84,36 @@ body
     background-color:grey;
 }
 
-.contact-details
+.contact-details-section
 {
-    font-size: 20px;
+    background-color: blue;
+    flex: 1;
+}
+
+.education-and-employment
+{
+    background-color: black;
+    color: white;
+    flex: 1;
 }
 
 #skills-heading
 {
     background-color:black;
-    padding: 10px;
-    color:white;
+    color:green;
     font-weight: bold;
     font-size: 40px;
+    border-color:black;
+    border-style: solid;
 }
 
-#links
+.links
 { 
-    margin-left: 1200px;
-    position: absolute;
-    color: white;
-    margin-top: 20px;
+    position: relative;
+    bottom: 35%;
+    left: 80%;
+    width: fit-content;
+    font-size: 20px;
 }
 
 a
@@ -122,3 +126,16 @@ a:hover
 {
     color: thistle;
 }
+
+@media only screen and (max-width: 600px) {
+    .name, .designation {
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #about {
+      display: flex;
+      flex-direction: column;
+    }
+  }

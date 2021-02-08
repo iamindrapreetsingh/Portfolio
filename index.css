@@ -1,30 +1,45 @@
 body
 {
-    margin: 0px;
+    margin: 0%;
+    border-style: solid;
+    border-color: yellowgreen;
+    border-width:20px;
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
 }
 
 .header
 {
-    background-image: url("background.jpg");
     height: 350px;
     width: 100%;  
-    background-size: cover;
+    background-image: url("background.jpg");
+    background-size: cover;   
 }
 
-#name
+.name-and-desig
 {
+    position: relative;
     color: white;
     border-radius: 3%;
     font-size: 70px;
-    margin-top: 130px;
+    top: 140px;
     width: fit-content;
-    display: inline-block;
-    margin-left: 20px;
+    left: 20px;
 }
 
-#links
-{    margin-top: -250px;
-    margin-left: 1200px;
+.designation
+{
+    font-size: 50px;
+}
+
+.links
+{
+    position: relative;
+    bottom: 35%;
+    left: 80%;
+    width: fit-content;
+    font-size: 20px;
 }
 
 a
@@ -38,23 +53,9 @@ a:hover
     color: thistle;
 }
 
-#footer
-{   
-    height: 100%;
-    width: 100%; 
-    background-color:rgb(67, 69,68);
-    color: white;
-}
-
-#projects
-{
-    margin-left: 100px;
-}
-
 #project-heading
 {
-    display: inline-block;
-    margin-top: 50px;
+    top: 50px;
     font-size: 40px;
     text-decoration: underline;
 }
@@ -70,3 +71,17 @@ a:hover
     font-size: 20px;
     margin-top: 20px;
 }
+
+#projects
+{
+    margin: 50px 100px 50px 100px;
+    color: green;
+    background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .name, .designation {
+      font-size: 30px;
+    }
+  }
+
