@@ -1,87 +1,106 @@
-body
-{
-    margin: 0%;
-    border-style: solid;
-    border-color: yellowgreen;
-    border-width:20px;
-    width: fit-content;
-    height: fit-content;
-    background-color: black;
+body {
+  margin: 0px;
+  border-style: solid;
+  border-color: yellowgreen;
+  border-width: 20px;
+  background-color: black;
 }
 
-.header
-{
-    height: 350px;
-    width: 100%;  
-    background-image: url("background.jpg");
-    background-size: cover;   
+.header {
+  height: 350px;
+  width: 100%;
+  background-image: url("background.jpg");
+  background-size: cover;
+  position: relative;
 }
 
-.name-and-desig
-{
-    position: relative;
-    color: white;
-    border-radius: 3%;
-    font-size: 70px;
-    top: 140px;
-    width: fit-content;
-    left: 20px;
+.name-and-desig {
+  position: relative;
+  color: white;
+  border-radius: 3%;
+  font-size: 70px;
+  top: 140px;
+  width: fit-content;
+  left: 20px;
 }
 
-.designation
-{
-    font-size: 50px;
+.designation {
+  font-size: 50px;
 }
 
-.links
-{
-    position: relative;
-    bottom: 35%;
-    left: 80%;
-    width: fit-content;
-    font-size: 20px;
+.links {
+  position: absolute;
+  left: 80%;
+  top: 5%;
+  width: fit-content;
+  font-size: 20px;
 }
 
-a
-{
-    color: white;
-    text-decoration: none;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-a:hover
-{
-    color: thistle;
+a:hover {
+  color: thistle;
 }
 
-#project-heading
-{
-    top: 50px;
-    font-size: 40px;
-    text-decoration: underline;
+.project-heading {
+  top: 50px;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
-.project-name
-{
-    margin-top: 30px;
-    font-size: 30px;
+.project-name {
+  margin-top: 30px;
+  font-size: 30px;
 }
 
-.project-details
-{
-    font-size: 20px;
-    margin-top: 20px;
+.project-details {
+  font-size: 20px;
+  margin-top: 20px;
 }
 
-#projects
-{
-    margin: 50px 100px 50px 100px;
-    color: green;
-    background-color: black;
+.project-link {
+  font-size: 20px;
+  margin-left: 20px;
+  color: whitesmoke;
+}
+
+.projects {
+  margin: 50px 100px 50px 100px;
+  color: green;
+  background-color: black;
 }
 
 @media only screen and (max-width: 600px) {
-    .name, .designation {
-      font-size: 30px;
-    }
+  .name,
+  .designation {
+    font-size: 30px;
   }
+}
 
+@media only screen and (max-width: 950px) {
+  .links {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .links {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .project-details,
+  .project-link {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .project-link {
+    font-size: 14px;
+  }
+}

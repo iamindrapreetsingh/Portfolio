@@ -1,141 +1,129 @@
-body
-{
-    margin: 0px;
-    background-color: rgb(102, 153, 153);
-    background-size: cover;
-    border-style: solid;
-    border-color: yellowgreen;
-    border-width:20px;
-    height: fit-content;
+body {
+  margin: 0px;
+  border-style: solid;
+  border-color: yellowgreen;
+  border-width: 20px;
+  background-color: rgb(168, 168, 168);
 }
 
-.header
-{
-    height: 350px;
-    width: 100%;  
-    background-image: url("background.jpg");
-    background-size: cover;   
+.header {
+  height: 350px;
+  width: 100%;
+  background-image: url("background.jpg");
+  background-size: cover;
+  position: relative;
 }
 
-.name-and-desig
-{
-    position: relative;
-    color: white;
-    border-radius: 3%;
-    font-size: 70px;
-    top: 140px;
-    width: fit-content;
-    left: 20px;
+.name-and-desig {
+  position: relative;
+  color: white;
+  border-radius: 3%;
+  font-size: 70px;
+  top: 140px;
+  width: fit-content;
+  left: 20px;
 }
 
-.designation
-{
-    font-size: 50px;
+.designation {
+  font-size: 50px;
 }
 
-#about
-{
-    position: relative;
-    background-color: white;
-    font-size:30px;
-    display: flex;
+.about {
+  position: relative;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  font-family: Verdana, sans-serif;
 }
 
-.education-and-empoyment-png
-{
-    height: 50px;
-    width: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
+.logos {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.employment-section
-{
-    margin-top: 50px;
+.skills {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#top_left
-{
-  position:absolute;
-  width:595px;
-  height:500px; 
-  font-weight: bold;
-  border-style:solid;
-  border-color:white;
+.skills-a {
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  border-right: none;
+  border-left: none;
 }
 
-#skills
-{
-    background-color: antiquewhite;
-    flex: 1;
+.skills-b {
+  background-color: grey;
 }
 
-.skills-a
-{
-    background-color: white;
-    border-color:black;
-    border-style: solid; 
-    font-weight: bold; 
-    font-size: 40px;
+.contact-details-section {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.skills-b
-{
-    background-color:grey;
+.education-and-employment-section {
+  background-color: black;
+  color: white;
+  flex: 1;
 }
 
-.contact-details-section
-{
-    background-color: blue;
-    flex: 1;
+.headings {
+  background-color: black;
+  color: yellowgreen;
+  border-color: yellowgreen;
+  border-style: solid;
+  border-left: none;
+  font-family: Verdana, sans-serif;
 }
 
-.education-and-employment
-{
-    background-color: black;
-    color: white;
-    flex: 1;
+.links {
+  position: absolute;
+  left: 80%;
+  top: 5%;
+  width: fit-content;
+  font-size: 20px;
 }
 
-#skills-heading
-{
-    background-color:black;
-    color:green;
-    font-weight: bold;
-    font-size: 40px;
-    border-color:black;
-    border-style: solid;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.links
-{ 
-    position: relative;
-    bottom: 35%;
-    left: 80%;
-    width: fit-content;
-    font-size: 20px;
-}
-
-a
-{
-    color: white;
-    text-decoration: none;
-}
-
-a:hover
-{
-    color: thistle;
+a:hover {
+  color: thistle;
 }
 
 @media only screen and (max-width: 600px) {
-    .name, .designation {
-      font-size: 30px;
-    }
+  .name,
+  .designation {
+    font-size: 30px;
   }
+}
 
-  @media only screen and (max-width: 600px) {
-    #about {
-      display: flex;
-      flex-direction: column;
-    }
+@media only screen and (max-width: 770px) {
+  .about {
+    display: flex;
+    flex-direction: column;
   }
+}
+
+@media only screen and (max-width: 950px) {
+  .links {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .links {
+    font-size: 9px;
+  }
+}
